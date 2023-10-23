@@ -12,11 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            p{
-                color: red;
-            }
             div{
-                color: #654321;
+                font-size: 100px;
+                line-height: 100%;
+            }
+            .box{
+                display: flex; /* 비교가 편하도록 자식들을 양옆으로 배치 */
+            }
+            .a{
+                background-color: red;
+            }
+            .b{
+                background-color: yellow;
             }
         </style>
     </head>
@@ -25,8 +32,10 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <p>붉은 색</p>
-        <div>div 의 색은 #654321</div>
+        <div class="box">
+            <div class="a">가</div>
+            <div class="b">g</div>
+        </div>
 
         <script src="" async defer></script>
     </body>

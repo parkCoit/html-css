@@ -12,11 +12,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            p{
-                color: red;
+            h1{
+                text-align: center;
+                
             }
-            div{
-                color: #654321;
+            h2{
+                text-align: left;
+            }
+            h3{
+                text-align: right;
+            }
+            span{
+                text-align: center;
+                display: block; /* span은 기본적으로 display 가 inline으로 설정되어 text-align 사용시 여유공간 없음 */
             }
         </style>
     </head>
@@ -25,8 +33,10 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <p>붉은 색</p>
-        <div>div 의 색은 #654321</div>
+        <h1>중앙</h1>
+        <h2>left</h2>
+        <h3>right</h3>
+        <span>display inline</span>
 
         <script src="" async defer></script>
     </body>

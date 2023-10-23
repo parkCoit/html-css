@@ -12,11 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            p{
-                color: red;
+            /* ol ul 태그 차이점은 list-style-type 차이뿐 */
+            ul{
+                list-style-type: decimal;
+                /* list-style-type: '글자'; */
             }
-            div{
-                color: #654321;
+            ol{
+                list-style-image: linear-gradient(to left bottom, red, blue);
+                /* list-style-type: '😆'; */
             }
         </style>
     </head>
@@ -25,9 +28,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <p>붉은 색</p>
-        <div>div 의 색은 #654321</div>
+        <ul>
+            <li>순서가</li>
+            <li>없는</li>
+            <li>리스트</li>
+        </ul>
 
+        <ol>
+            <li>순서가</li>
+            <li>있는</li>
+            <li>리스트</li>
+        </ol>
         <script src="" async defer></script>
     </body>
 </html>
