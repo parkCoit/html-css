@@ -12,12 +12,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            div{
-                width: 150px;
-                height: 150px;
-                background-color: aquamarine;
-                box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
-                /* 3번째 숫자를 추가해 투명도 조절 */
+            #blueBox{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+            #redBox{
+                width: 100px;
+                height: 100px;
+                background-color: red;
             }
         </style>
     </head>
@@ -25,7 +28,11 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>그림자</div>
+        
+        <div id="blueBox">Blue Box</div>
+        <br>
+        <div id="redBox">Red Box</div>
+
         <script src="" async defer></script>
     </body>
 </html>

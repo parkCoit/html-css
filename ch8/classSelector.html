@@ -12,12 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            div{
-                width: 150px;
-                height: 150px;
-                background-color: aquamarine;
-                box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
-                /* 3번째 숫자를 추가해 투명도 조절 */
+            #blueBox{
+                background-color: blue;
+                color: white;
+            }
+            #redBox{
+                background-color: red;
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+            }
+            .bg-yellow{
+                background-color: yellow;
+            }
+            .font-lg{
+                font-size: 20px;
+            }
+            .red{
+                color:red;
             }
         </style>
     </head>
@@ -25,7 +38,16 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>그림자</div>
+        <div id="blueBox" class="square">Blue Box</div>
+        <br>
+        <div id="redBox" class="square">Red Box</div>
+        <div>
+            코드는 <span class="red">이해하면서 따라해야</span>합니다
+            <br>
+            책을 읽는 사람 모두 <span class="font-lg bg-yellow">멋진 웹 사이트</span>를 만들 수 있을 거에요.
+            <br>
+            id는 여러개 할당 불가능합니다!
+        </div>
         <script src="" async defer></script>
     </body>
 </html>

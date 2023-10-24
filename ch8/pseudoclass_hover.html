@@ -12,12 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            div{
-                width: 150px;
-                height: 150px;
-                background-color: aquamarine;
-                box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
-                /* 3번째 숫자를 추가해 투명도 조절 */
+            .colorful-box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            /* hover 마우스 커서 올릴때 */
+            .colorful-box:hover{
+                background-color: blue;
+            }
+            /* active 클릭 했을 때 */
+            button:active{
+                background-color: aqua;
             }
         </style>
     </head>
@@ -25,7 +31,9 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>그림자</div>
+        
+        <div class="colorful-box"> </div>
+        <button>버튼</button>
         <script src="" async defer></script>
     </body>
 </html>

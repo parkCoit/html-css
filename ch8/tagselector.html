@@ -13,11 +13,10 @@
         <link rel="stylesheet" href="">
         <style>
             div{
-                width: 150px;
-                height: 150px;
-                background-color: aquamarine;
-                box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
-                /* 3번째 숫자를 추가해 투명도 조절 */
+                color: red;
+            }
+            span{
+                color: blue;
             }
         </style>
     </head>
@@ -25,7 +24,15 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>그림자</div>
+        
+        <div>
+            div 태그는 빨간색
+            <br>
+            <span>span 태그는 파란색</span>
+            <br>
+            가장 가까운 스타일이 적용!
+        </div>
+
         <script src="" async defer></script>
     </body>
 </html>

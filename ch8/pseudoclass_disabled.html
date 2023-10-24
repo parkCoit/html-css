@@ -12,20 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            div{
-                width: 150px;
-                height: 150px;
-                background-color: aquamarine;
-                box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.5);
-                /* 3번째 숫자를 추가해 투명도 조절 */
+            /* disabled : 비활성 요소일 때 */
+            *:disabled{
+                background-color: aqua;
             }
+            /* div disabled 속성 확인 하기위해 속성 선택자 사용하면 확인가능 
+            *[disabled]{
+              background-color: red;  
+            }
+            */
         </style>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>그림자</div>
+        
+        <input disabled>
+        <div disabled> 비활성 div 태그</div> 
+
         <script src="" async defer></script>
     </body>
 </html>
