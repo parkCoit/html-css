@@ -7,28 +7,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>margin</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
+            h1{
+                margin: 100px 8px 32px 64px; /* 시계방향으로 상단 오른쪽 하단 왼쪽 지정 */
+                background-color: aqua;
+            }
             div{
-                display: flex;
-                
-                width: 100%;
-                height: 1000px;
-                
-            }
-            .asd{
-                
-                width: 20%;
-                height: 100px;
-                background-color: blue;
-            }
-            .ads{
-                width: 20%;
-                height: 100px;
-                background-color: red;
+                margin-top: 16px;
+                background-color: antiquewhite;
             }
         </style>
     </head>
@@ -36,16 +26,8 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
-        </div>
+        <h1>기존 여백 제거되었습니다</h1>
+        <div>위 요소랑 16px 떨어져 있음</div>
         <script src="" async defer></script>
     </body>
 </html>

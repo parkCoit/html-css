@@ -13,22 +13,16 @@
         <link rel="stylesheet" href="">
         <style>
             div{
-                display: flex;
-                
-                width: 100%;
-                height: 1000px;
-                
+                width: 40px;
+                height: 40px;
+                background: antiquewhite;
+                overflow: visible; /* visible - 벗어나도 보인다, hidden - 벗어나면 숨긴다, scroll - 벗어나면 스크롤생김*/
             }
-            .asd{
-                
-                width: 20%;
+            h1 {
+                overflow-y: scroll; /* y축만 스크롤 생김 */
+                width: 100px;
                 height: 100px;
-                background-color: blue;
-            }
-            .ads{
-                width: 20%;
-                height: 100px;
-                background-color: red;
+                background: aquamarine;
             }
         </style>
     </head>
@@ -37,15 +31,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
+            안녕안녕안녕안녕안녕안녕
         </div>
+        <h1>
+            안녕하세요!<br>
+            멋진콘텐츠죠!<br>
+            세 번째 줄입니다
+        </h1>
         <script src="" async defer></script>
     </body>
 </html>

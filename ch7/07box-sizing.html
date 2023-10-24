@@ -13,22 +13,19 @@
         <link rel="stylesheet" href="">
         <style>
             div{
-                display: flex;
-                
-                width: 100%;
-                height: 1000px;
-                
+                width: 150px;
+                height: 150px;
+                padding: 16px;
+                background-color: aquamarine;
+                box-sizing: border-box; /* 속 여백 포함 박스 사이즈 */
             }
-            .asd{
-                
-                width: 20%;
-                height: 100px;
-                background-color: blue;
-            }
-            .ads{
-                width: 20%;
-                height: 100px;
-                background-color: red;
+            h1{
+                width: 150px;
+                height: 150px;
+                padding: 16px;
+                background-color: beige;
+                font-size: 16px;
+                font-weight: normal;
             }
         </style>
     </head>
@@ -37,15 +34,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
+            박스 사이징 border-box<br>
+            padding까지 폭과 높이에 포함
         </div>
+        <h1>
+            박스 사이징 기본값(content-box)<br>
+            padding이 폭과 높이에 합산
+        </h1>
         <script src="" async defer></script>
     </body>
 </html>

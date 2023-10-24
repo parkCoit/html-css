@@ -13,22 +13,15 @@
         <link rel="stylesheet" href="">
         <style>
             div{
-                display: flex;
-                
-                width: 100%;
-                height: 1000px;
-                
+                height: 50vh; /* 화면 전체의 반 */
+                background: bisque;
+                min-height: 64px;
             }
-            .asd{
-                
-                width: 20%;
-                height: 100px;
-                background-color: blue;
-            }
-            .ads{
-                width: 20%;
-                height: 100px;
-                background-color: red;
+            h3{
+                background: antiquewhite;
+                height: 50%; /* 부모 요소 높이의 50%, 전체 화면 기준 25% 정도 */
+                min-height: 32px;
+                overflow: hidden;
             }
         </style>
     </head>
@@ -37,14 +30,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
-            <div>
-                <div class="asd"></div>
-                <div class="ads"></div>
-            </div>
+            <h3>멋진 콘텐츠</h3>
         </div>
         <script src="" async defer></script>
     </body>
