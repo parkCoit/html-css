@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>first</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            li{
+                margin-bottom: 20px;
+            }
+            .margin-bottom{
+                margin-bottom: 10px;
+            }
+            .border-box{
+                width: 100%;
+                height: 100%;
+                border: solid 1px;
+            }
+            .no-dot{
+                list-style-type: none;
+                padding-left: 1%;
+            }
+            [type="radio"], span {
+  vertical-align: middle;
+}
+
+[type="radio"] {
+  appearance: none;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  transition: border 0.5s ease-in-out;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <div class="margin-bottom">
+                <label for="name">고객명:</label>
+                <input id="name" type="text">
+            </div>
+
+            <div class="margin-bottom">
+                <label for="phone">전화번호:</label>
+                <input id="phone" type="text">
+            </div>
+
+            <div class="margin-bottom">
+                <label for="email">E-mail:</label>
+                <input id="email" type="email">
+            </div>
+
+            <div>
+                <label for="pizza">피자선택</label>
+                <select>
+                    <option>피자를 선택해주세요</option>
+                    <option>불고기 피자</option>
+                    <option>포테이토 피자</option>
+                </select>
+            </div>
+
+            <div class="border-box margin-bottom">
+                
+                <ul class="no-dot">
+                    <li >
+                        <input id="small" type="radio" name="size">
+                        <label for="small">Small</label>
+                    </li>
+                    <li>
+                        <input id="Medium" type="radio" name="size">
+                        <label for="Medium" name="size">Medium</label>
+                    </li>
+                    <li>
+                        <input id="Large" type="radio" name="size">
+                        <label for="Large" >Large</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="border-box margin-bottom">
+                
+                <ul class="no-dot">
+                    <li >
+                        <input id="bacon" type="checkbox" name="topping">
+                        <label for="bacon">베이컨</label>
+                    </li>
+                    <li>
+                        <input id="cheese" type="checkbox" name="topping">
+                        <label for="cheese" name="size">치즈</label>
+                    </li>
+                    <li>
+                        <input id="onion" type="checkbox" name="topping">
+                        <label for="onion" >양파</label>
+                    </li>
+                    <li>
+                        <input id="mushroom" type="checkbox" name="topping">
+                        <label for="mushroom" >버섯</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="margin-bottom">
+                <label for="clock">배송시간:</label>
+                <input type="date" id="clock">
+            </div>
+
+            <div class="margin-bottom">
+                <label for="request">배송시 요청사항:</label>
+                <textarea id="request" rows="3"></textarea>
+            </div>
+
+            <button type="submit">주문하기</button>
+            
+            
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
