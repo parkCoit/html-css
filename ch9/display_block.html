@@ -12,23 +12,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .asd{
-                display: flex;
-                flex-direction: row;
-                padding: 20px;
-                width: 20%;
+            /* div는 display의 defalt 값이 block임 */
+            /* display block은 값이 작든 크든 한줄을 전부 사용함 */
+            div{
+                
+                width: 100px;
                 height: 100px;
-            
-            }
-            .ads{
-                width: 50%;
-                height: 50px;
                 background-color: red;
-            }
-            .aa{
-                width: 50%;
-                height: 50px;
-                background-color: blue;
+                color: white;
             }
         </style>
     </head>
@@ -36,12 +27,10 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="asd">
-            <div class="ads"></div>
-            <div class="aa"></div>
-            <div class="aa"></div>
-            <div class="ads"></div>
-        </div>
+        
+        <div>정사각형</div>
+        위가 가득 차 있어서 아래로 내려와요
+
         <script src="" async defer></script>
     </body>
 </html>

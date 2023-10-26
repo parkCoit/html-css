@@ -12,23 +12,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .asd{
-                display: flex;
-                flex-direction: row;
-                padding: 20px;
-                width: 20%;
-                height: 100px;
-            
+            /* focus 가상 클래스 상호작용 하는 요소 확인
+            div경우는 tabindex="0" 사용해야 요소 확인 가능*/
+            *:focus{
+                box-shadow: 0px 0px 0px 4px red;
             }
-            .ads{
-                width: 50%;
-                height: 50px;
-                background-color: red;
-            }
-            .aa{
-                width: 50%;
-                height: 50px;
-                background-color: blue;
+            .box{
+                width: 150px;
+                height: 150px;
+                border: 2px solid blue;
             }
         </style>
     </head>
@@ -36,12 +28,11 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="asd">
-            <div class="ads"></div>
-            <div class="aa"></div>
-            <div class="aa"></div>
-            <div class="ads"></div>
-        </div>
+        <input>
+        <input>
+        <button>버튼</button>
+        <div class="box">상호작용 불가능</div>
+        <div class="box" tabindex="0">상호작용 가능</div>
         <script src="" async defer></script>
     </body>
 </html>

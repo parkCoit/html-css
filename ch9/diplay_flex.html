@@ -12,23 +12,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .asd{
+            .flex{
                 display: flex;
-                flex-direction: row;
-                padding: 20px;
-                width: 20%;
-                height: 100px;
-            
+                border: solid 1px black;
+                padding: 16px;
+                background-color: aquamarine;
             }
-            .ads{
-                width: 50%;
-                height: 50px;
-                background-color: red;
-            }
-            .aa{
-                width: 50%;
-                height: 50px;
-                background-color: blue;
+            .flex > div {
+                background-color: blueviolet;
+                color: white;
+                border: solid 1px black;
             }
         </style>
     </head>
@@ -36,11 +29,11 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="asd">
-            <div class="ads"></div>
-            <div class="aa"></div>
-            <div class="aa"></div>
-            <div class="ads"></div>
+        <div class="flex">
+            <div>플렉스</div>
+            <div>박스는</div>
+            <div>인라인 보다</div>
+            <div>좋다</div>
         </div>
         <script src="" async defer></script>
     </body>

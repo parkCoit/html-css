@@ -12,23 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .asd{
-                display: flex;
-                flex-direction: row;
-                padding: 20px;
-                width: 20%;
+            /* inline-blcok은 폭과 높이 설정하며 한줄을 차지하지 않아 가로 배치 가능 */
+            .box{
+                /*inline-block */
+                display: inline-block;
+                width: 100px;
                 height: 100px;
-            
-            }
-            .ads{
-                width: 50%;
-                height: 50px;
                 background-color: red;
+                color: white;
+                font-size: 16px;
             }
-            .aa{
-                width: 50%;
-                height: 50px;
-                background-color: blue;
+            *{
+                font-size: 0px;
             }
         </style>
     </head>
@@ -36,12 +31,10 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="asd">
-            <div class="ads"></div>
-            <div class="aa"></div>
-            <div class="aa"></div>
-            <div class="ads"></div>
-        </div>
+        
+        <div class="box"></div>
+        <div class="box">두 번쨰</div>
+
         <script src="" async defer></script>
     </body>
 </html>

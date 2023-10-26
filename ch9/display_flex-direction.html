@@ -12,23 +12,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .asd{
+            .flex{
                 display: flex;
-                flex-direction: row;
-                padding: 20px;
-                width: 20%;
+                border: solid 1px black;
+                padding: 16px;
+                background-color: aquamarine;
+                height: 400px;
+                margin-bottom: 16px;
+            }
+            .flex-center{
+                justify-content: center;
+            }
+            /*
+            .align-item-start{
+                align-items: center;
+            }
+            */
+            .column{
+                flex-direction: column;
+            }
+            .flex > div{
+                background-color: blueviolet;
+                color: white;
                 height: 100px;
-            
-            }
-            .ads{
-                width: 50%;
-                height: 50px;
-                background-color: red;
-            }
-            .aa{
-                width: 50%;
-                height: 50px;
-                background-color: blue;
+                border: solid 1px black;
             }
         </style>
     </head>
@@ -36,12 +43,13 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="asd">
-            <div class="ads"></div>
-            <div class="aa"></div>
-            <div class="aa"></div>
-            <div class="ads"></div>
+        
+        <div class="flex align-item-start flex-center column">
+            <div>첫 번째</div>
+            <div>두 번째</div>
+            <div>세 번째</div>
         </div>
+
         <script src="" async defer></script>
     </body>
 </html>

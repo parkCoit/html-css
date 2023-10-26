@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .flex{
+                display: flex;
+                border: solid 1px black;
+                padding: 16px;
+                background-color: aquamarine;
+                margin-bottom: 16px; 
+        
+            }
+            /* space-between : 플렉스 아이템을 최대한 서로 떨어트림 */
+            .flex-space-between{
+                justify-content: space-between;
+            }
+            /* space-around : 플렉스 아이템 양 옆에 같은 크기의 여백을 추가 */
+            .flex-space-around{
+                justify-content: space-around;
+            /* space-evenly : 플렉스 박스안에 있는 모든 여백의 길이를 동일하도록 설정 */    
+            }
+            .flex-space-evenly{
+                justify-content: space-evenly;
+            }
+            .flex > div{
+                background-color: blueviolet;
+                border: 1px solid black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="flex flex-space-between">
+            <div>최대한</div>
+            <div>멀어진</div>
+            <div>요소</div>
+        </div>
+
+        <div class="flex flex-space-around">
+            <div>요소 양옆</div>
+            <div>여백이</div>
+            <div>동일</div>
+        </div>
+
+
+        <div class="flex flex-space-evenly">
+            <div>사이</div>
+            <div>여백이</div>
+            <div>모두</div>
+            <div>동일</div>
+        </div>
+
+        <script src="" async defer></script>
+    </body>
+</html>
