@@ -19,21 +19,13 @@
                 background-color: aquamarine;
                 height: 400px;
                 margin-bottom: 16px;
+                
             }
-            .flex-center{
-                justify-content: center;
+            /* justify-content: space-between; 사용시 gap 무시 됨. */
+            .gap{
+                gap: 80px;
             }
-            .flex-space-between{
-                justify-content: space-between;
-            }
-            /*  */ 
-            .align-item-start{
-                align-items: center;
-            }
-            .column{
-                flex-direction: column;
-            }
-            .flex > div{
+            .flex > div {
                 background-color: blueviolet;
                 color: white;
                 height: 100px;
@@ -46,7 +38,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="flex align-item-start flex-center flex-space-between column">
+        <div class="flex gap">
             <div>첫 번째</div>
             <div>두 번째</div>
             <div>세 번째</div>

@@ -12,28 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .flex{
-                display: flex;
-                border: solid 1px black;
-                padding: 16px;
-                background-color: aquamarine;
-                height: 400px;
-                margin-bottom: 16px;
+            .grid{
+                display: grid;
+                grid-template-columns: 150px 150px 150px;
+                row-gap: 16px;
+                column-gap: 8px;
             }
-            .flex-center{
-                justify-content: center;
-            }
-            .flex-space-between{
-                justify-content: space-between;
-            }
-            /*  */ 
-            .align-item-start{
-                align-items: center;
-            }
-            .column{
-                flex-direction: column;
-            }
-            .flex > div{
+            .grid > div{
                 background-color: blueviolet;
                 color: white;
                 height: 100px;
@@ -45,11 +30,12 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div class="flex align-item-start flex-center flex-space-between column">
+       
+        <div class="grid">
             <div>첫 번째</div>
             <div>두 번째</div>
             <div>세 번째</div>
+            <div>네 번째</div>
         </div>
 
         <script src="" async defer></script>

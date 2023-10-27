@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            li{
+                padding-bottom: 16px;
+            }
+            .borderbox{
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                margin: 15px;
+            }
+            .nodat{
+                list-style-type: none;   
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <div class="borderbox">
+                <h4>납품자 정보</h4>
+             <ul class="nodat">
+                <li>
+                    <label for="name">1. 납품자명 : </label>
+                    <input id="name" type="text">
+                </li>
+                <li>
+                    <label for="email">2. email : </label>
+                    <input id="email" type="email">
+                </li>
+                <li>
+                    <label for="page">3. 홈페이지 : </label>
+                    <input id="page" type="text" value="http://">
+                </li>
+                <li>
+                    <label for="region">4. 지역 : </label>
+                    <select>
+                        <option>부산</option>
+                        <option>서울</option>
+                    </select>
+                </li>
+             </ul>
+             </div>
+             <div class="borderbox">
+                <h4>납품 정보</h4>
+                <ul>
+                    <li>
+                        <label for="productname">상품명 :</label>
+                        <input id="productname" type="text">
+                    </li>
+                    <li>
+                        <label for="num">납품수량 : </label>
+                        <input id="num" placeholder="최소 100" type="text">
+                    </li>
+                    <li>
+                        <label for="ra">납품등급 : </label>
+                        <input id="ra" type="range">
+                    </li>
+                    <li>
+                        <label for="etc">기타사항</label>
+                        <textarea id="etc" rows="4"></textarea>
+                    </li>
+                </ul>
+             </div>
+             
+             <div style="margin-left: 15px;">
+                <button type="submit">send message</button>
+             </div>
+            
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -12,33 +12,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .flex{
+            .layout{
                 display: flex;
-                border: solid 1px black;
-                padding: 16px;
-                background-color: aquamarine;
-                height: 400px;
-                margin-bottom: 16px;
+                gap: 16px;
+                max-width: 1024px;
+                margin: auto;
             }
-            .flex-center{
-                justify-content: center;
+            body{
+                background-color: rgb(240, 240, 240);
             }
-            .flex-space-between{
-                justify-content: space-between;
+            section{
+                width: 100%;
+                height: 1400px;
+                padding: 8px;
+                background-color: white;
             }
-            /*  */ 
-            .align-item-start{
-                align-items: center;
-            }
-            .column{
+            aside{
+                width: 300px;
+                display: flex;
                 flex-direction: column;
             }
-            .flex > div{
-                background-color: blueviolet;
+            .box{
+                background-color: blue;
+                width: 300px;
+                height: 300px;
                 color: white;
-                height: 100px;
-                border: solid 1px black;
             }
+            /* 정사각형 sticky 광고 */
+            .ads{
+                position: sticky;
+                top: 32px;
+                background-color: aquamarine;
+                width: 300px;
+                height: 300px;
+            }
+
         </style>
     </head>
     <body>
@@ -46,10 +54,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="flex align-item-start flex-center flex-space-between column">
-            <div>첫 번째</div>
-            <div>두 번째</div>
-            <div>세 번째</div>
+        <div class="layout">
+            <section>
+                본문 콘텐츠
+            </section>
+            <aside>
+                <div class="box">사이드바 박스</div>
+                <div class="ads">광고</div>
+            </aside>
         </div>
 
         <script src="" async defer></script>

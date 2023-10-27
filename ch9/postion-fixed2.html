@@ -12,32 +12,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .flex{
-                display: flex;
-                border: solid 1px black;
-                padding: 16px;
-                background-color: aquamarine;
-                height: 400px;
-                margin-bottom: 16px;
-            }
-            .flex-center{
-                justify-content: center;
-            }
-            .flex-space-between{
-                justify-content: space-between;
-            }
-            /*  */ 
-            .align-item-start{
-                align-items: center;
-            }
-            .column{
-                flex-direction: column;
-            }
-            .flex > div{
-                background-color: blueviolet;
-                color: white;
+            /* 고정 위치 */
+            .popup{
+                position: fixed;
+                top: 40%;
+                left: 40%;
+                width: 100px;
                 height: 100px;
-                border: solid 1px black;
+                border: 1px solid black;
+                background-color: white;
+                overflow-y: auto;
+            }
+            .long-box{
+                width: 300px;
+                height: 800px;
+            }
+            .a{
+                background-image: linear-gradient(red, blue);
             }
         </style>
     </head>
@@ -46,10 +37,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="flex align-item-start flex-center flex-space-between column">
-            <div>첫 번째</div>
-            <div>두 번째</div>
-            <div>세 번째</div>
+        <div class="long-box a">큰 사각형 A</div>
+        <div class="popup">
+            <h3>작은 팝업</h3>
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용
+            팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용 팝업 내용
         </div>
 
         <script src="" async defer></script>

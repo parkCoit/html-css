@@ -12,32 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .flex{
-                display: flex;
-                border: solid 1px black;
-                padding: 16px;
-                background-color: aquamarine;
-                height: 400px;
-                margin-bottom: 16px;
+            .rel{
+                position: relative;
+                top: -40px;
+                left: 40px;
             }
-            .flex-center{
-                justify-content: center;
-            }
-            .flex-space-between{
-                justify-content: space-between;
-            }
-            /*  */ 
-            .align-item-start{
-                align-items: center;
-            }
-            .column{
-                flex-direction: column;
-            }
-            .flex > div{
-                background-color: blueviolet;
-                color: white;
+            .box{
+                width: 100px;
                 height: 100px;
-                border: solid 1px black;
+            }
+            .a{
+                background-color: aquamarine;
+            }
+            .b{
+                background-color: bisque;
             }
         </style>
     </head>
@@ -46,11 +34,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="flex align-item-start flex-center flex-space-between column">
-            <div>첫 번째</div>
-            <div>두 번째</div>
-            <div>세 번째</div>
-        </div>
+        <div class="box a">정사각형 A</div>
+        <div class="box b rel">정사각형 B</div>
 
         <script src="" async defer></script>
     </body>
