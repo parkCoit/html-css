@@ -12,19 +12,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .hover-btn{
-                margin: 16px;
-                width: 100px;
-                background-color: red;
-                color: white;
-                cursor: pointer; /* 마우스 포인터 */
-                line-height: 300%;
-                text-align: center;
-                transition: 5s; 
+            /* key frames 설정 */
+            @keyframes zoom {
+                0%{
+                    transform: scale(1) rotate(0);
+                }
+                50%{
+                    transform: scale(1.5) rotate(90deg); 
+                }
+                100%{
+                    transform: scale(2) rotate(0);
+                }
             }
-            .hover-btn:hover{
-                transform: scale(1.2);
-                background-color: blue;
+            .ani-btn{
+                margin: 64px;
+                width: 200px;
+                text-align: center;
+                /* 키프레임 이름 선택 */
+                animation-name: zoom;
+                /* 애니메이션 지속 시간 설정 */
+                animation-duration: 3s;
+                /* 4초간 대기 */
+                animation-delay: 4s;
+                /* 타이밍 함수 사용 */
+                animation-timing-function: cubic-bezier(0.68, 0.22, 0, 1.32);
             }
         </style>
     </head>
@@ -32,9 +43,9 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div class="hover-btn">버튼</div>
 
+        <div class="ani-btn">애니메이션</div>
+        
         <script src="" async defer></script>
     </body>
 </html>

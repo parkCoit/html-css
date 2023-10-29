@@ -17,13 +17,15 @@
                 width: 100px;
                 background-color: red;
                 color: white;
-                cursor: pointer; /* 마우스 포인터 */
+                cursor: pointer;
                 line-height: 300%;
                 text-align: center;
-                transition: 5s; 
+                transition: 5s;
+                /* 살제 만든 타이밍 함수 */
+                transition-timing-function: cubic-bezier(0, 1.04, 0, 1.91);
             }
             .hover-btn:hover{
-                transform: scale(1.2);
+                transform: scale(1.2); /* 요소가 커지고 */
                 background-color: blue;
             }
         </style>
@@ -32,9 +34,9 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div class="hover-btn">버튼</div>
 
+        <div class="hover-btn">버튼</div>
+        
         <script src="" async defer></script>
     </body>
 </html>

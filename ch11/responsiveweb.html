@@ -12,19 +12,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .hover-btn{
-                margin: 16px;
-                width: 100px;
+            /* 기본형 PC */
+            .resoinsive-bg{
                 background-color: red;
-                color: white;
-                cursor: pointer; /* 마우스 포인터 */
-                line-height: 300%;
-                text-align: center;
-                transition: 5s; 
             }
-            .hover-btn:hover{
-                transform: scale(1.2);
-                background-color: blue;
+            /* 1024px 이하 (테블릿) */
+            @media screen and (max-width: 1024px) {
+                .resoinsive-bg{
+                    background-color: yellow;
+                }
+            }
+            /* 768px 이하 (휴대폰 가로, 소형 테블릿) */
+            @media screen and (max-width: 768px) {
+                .resoinsive-bg{
+                    background-color: purple;
+                }
+            }
+            /* 480px 이하 (휴대폰세로, 소형 테블릿) */
+            @media screen and (max-width: 480px) {
+                .resoinsive-bg{
+                    background-color: aqua;
+                }
             }
         </style>
     </head>
@@ -33,7 +41,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="hover-btn">버튼</div>
+        <div class="resoinsive-bg">반응형 웹</div>
 
         <script src="" async defer></script>
     </body>

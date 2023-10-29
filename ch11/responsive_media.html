@@ -12,20 +12,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <style>
-            .hover-btn{
-                margin: 16px;
-                width: 100px;
+            .responsive-bg {
                 background-color: red;
-                color: white;
-                cursor: pointer; /* 마우스 포인터 */
-                line-height: 300%;
-                text-align: center;
-                transition: 5s; 
             }
-            .hover-btn:hover{
-                transform: scale(1.2);
-                background-color: blue;
+            /* 300px 이하 */
+            @media  screen and (max-width: 500px) {
+                .responsive-bg{
+                    background-color: yellow;
+                }
             }
+            /* 400px 이상 */
+            @media screen and (min-width: 600px) {
+                .responsive-bg{
+                    background-color: blue;
+                }
+            }
+            /* 나중에 정의된 요소를 우선 적용함
+            .responsive-bg{
+                background-color: red;
+            }
+            */
         </style>
     </head>
     <body>
@@ -33,7 +39,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div class="hover-btn">버튼</div>
+        <div class="responsive-bg">반응형 요소</div>
 
         <script src="" async defer></script>
     </body>
